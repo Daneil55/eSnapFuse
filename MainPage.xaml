@@ -203,13 +203,13 @@
                     <Label Text="Bookings" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
-                <Frame CornerRadius="5" Grid.Column="2" HasShadow="False" Padding="0">
+                <Frame CornerRadius="5" BackgroundColor="Transparent"  BackgroundColor="Transparent" Grid.Column="2" HasShadow="False" Padding="0">
                     <VerticalStackLayout>
                     <Label Text="bell" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
                     <Label Text="Notifications" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
-                <Frame CornerRadius="5" Grid.Column="3" HasShadow="False" Padding="0">
+                <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="3" HasShadow="False" Padding="0">
                     <VerticalStackLayout>
                     <Label Text="user" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
                     <Label Text="Profile" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
