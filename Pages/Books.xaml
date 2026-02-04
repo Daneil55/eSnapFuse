@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eSnapFuse.Models.Books"          
+             Shell.NavBarIsVisible="False"
+             Title="Books">
+    
+    <Grid RowDefinitions="60, *" RowSpacing="10"  >
+        <Frame Grid.Row="0"  Padding="6">
+            <Label Text="Messages" VerticalOptions="Center" FontAttributes="Bold"/>
+        </Frame>
+        <Frame Grid.Row="1"  Padding="0" Margin="8" HeightRequest="100" VerticalOptions="Start" CornerRadius="15">
+
+
+            <Frame >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Frame.GestureRecognizers>
+
+                <Grid RowDefinitions="50,5*">
+                    <HorizontalStackLayout Grid.Row="0" BackgroundColor="Transparent">
+                        <Frame Margin="5" BackgroundColor="AliceBlue" WidthRequest="50"
+              HeightRequest="50" Padding="15" CornerRadius="50">
+                            <Label Text="DB" TextColor="Gray" FontAttributes="Bold"/>
+
+                        </Frame>
+                        <Frame Margin="-20,60,0,20"  BackgroundColor="Green" BorderColor="White" WidthRequest="3"
+        HeightRequest="3" Padding="5" CornerRadius="50">
+
+                        </Frame>
+                        <VerticalStackLayout Margin="5">
+                            <Label Text="Daniel Baraka" Margin="2" FontAttributes="Bold"/>
+                            <Label Text="The edited photos are ready for download" Margin="0" TextColor="Gray" FontAttributes="None" FontSize="9"/>
+                            <Label Text="Creative Vision Photography" Margin="0" TextColor="Gray" FontAttributes="Bold" FontSize="9"/>
+                        </VerticalStackLayout>
+
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Row="0" HorizontalOptions="End" Margin="5" Padding="0">
+                        <HorizontalStackLayout Padding="0,-10,0,0">
+                            <HorizontalStackLayout Margin="5">
+                                <Frame Margin="1,0,0,20"  BackgroundColor="Blue" WidthRequest="10"
+                                        HeightRequest="10" Padding="5" CornerRadius="6">
+                                    <Label Text="2" TextColor="White" FontSize="8" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+                                </Frame>
+
+                            </HorizontalStackLayout>
+
+                            <Label Text="1 hour ago" Margin="5,6,0,0" TextColor="Gray" FontAttributes="Bold"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+        </Frame>
+    </Grid>
+
+</ContentPage>

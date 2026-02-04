@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eSnapFuse.Pages.Profile"
+             Shell.NavBarIsVisible="False"
+             Title="Profile">
+    <Grid RowDefinitions="80, *, 80">
+
+        <Frame Grid.Row="0" Padding="6" BackgroundColor="White">
+            <HorizontalStackLayout>
+                <Label Text="Profile" VerticalOptions="Center" FontFamily="FontM" FontSize="18" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <ScrollView Grid.Row="1">
+            <Grid RowDefinitions="30,400,180,170" RowSpacing="25" Padding="10" >
+                <Frame Grid.Row="0" Padding="6" BackgroundColor="LightGrey" CornerRadius="40" >
+                    <Grid ColumnDefinitions="*,*,*,*">
+                        <Label Text="Profile" Grid.Column="0" HorizontalOptions="Center" FontFamily="FontM" VerticalOptions="Center" Padding="0"/>
+                        <Label Text="Portfolio" Grid.Column="1" HorizontalOptions="Center" FontFamily="FontM" VerticalOptions="Center"/>
+                        <Label Text="Packages" Grid.Column="2" HorizontalOptions="Center" FontFamily="FontM" VerticalOptions="Center"/>
+                        <Label Text="Settings" Grid.Column="3" HorizontalOptions="Center" FontFamily="FontM" VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="1" Padding="0" BackgroundColor="WhiteSmoke" CornerRadius="10">
+                    <Grid RowDefinitions="100,*,80">
+                        <HorizontalStackLayout Grid.Row="0" >
+                            <Frame Margin="5" BackgroundColor="Blue" WidthRequest="50"
+                                    HeightRequest="50" Padding="15" CornerRadius="50">
+                                <Label Text="DB" TextColor="White" FontAttributes="Bold"/>
+
+                            </Frame>
+
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="Daniel Baraka" Margin="2" FontFamily="FontM" FontAttributes="Bold" HorizontalOptions="Start"/>
+
+                                <Label Text="Professional Photographer" FontFamily="FontM" Margin="2" TextColor="Gray" FontAttributes="Bold" FontSize="12"/>
+                                <HorizontalStackLayout>
+                                    <Label Text="Star" Margin="0,6,0,0" TextColor="Gold" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                    <Label Text="4.9(89 reviews)" Margin="5" TextColor="Gray" FontFamily="FontM" FontAttributes="Bold" FontSize="12"/>
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+
+                        </HorizontalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" BackgroundColor="WhiteSmoke" Padding="6">
+                            <Label Text="Bio" TextColor="Black" FontFamily="FontM"/>
+                            <Frame Margin="2" HorizontalOptions="Start" WidthRequest="380" CornerRadius="10" BackgroundColor="LightGrey">
+                                <Label Text="Professional photographer with 8+ years of experience in weddings, portraits and corporate events. 
+Passionate about capturing life's precious moments with artistic vision and technical excellence" FontSize="9"/>
+                            </Frame>
+                            <Label Text="Location" TextColor="Black" FontFamily="FontM"/>
+                            <Frame Margin="2" HorizontalOptions="Start" Padding="10" HeightRequest="30" WidthRequest="380" CornerRadius="10" BackgroundColor="LightGrey">
+                                <Label Text="Lilongwe, Malawi" FontSize="9" FontFamily="FontM"/>
+                            </Frame>
+                            <Label Text="Experience" TextColor="Black" FontFamily="FontM"/>
+                            <Frame Margin="2" HorizontalOptions="Start"  Padding="10" HeightRequest="30" WidthRequest="380" CornerRadius="10" BackgroundColor="LightGrey">
+                                <Label Text="8+ years" FontSize="9" FontFamily="FontM"/>
+                            </Frame>
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="2" BackgroundColor="WhiteSmoke" Padding="6">
+                            <Label Text="Specialities" FontFamily="FontM"/>
+                            <HorizontalStackLayout>
+                                <Frame Margin="2" Padding="-10" HorizontalOptions="Start" WidthRequest="70" HeightRequest="25" CornerRadius="10" BackgroundColor="Blue">
+                                    <Label Text="Wedding" FontSize="12" FontFamily="FontM" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                                </Frame>
+                                <Frame Margin="2" Padding="-10" HorizontalOptions="Start" WidthRequest="60" HeightRequest="25" CornerRadius="10" BackgroundColor="Blue">
+                                    <Label Text="Portrait" FontSize="12" FontFamily="FontM" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                                </Frame>
+                                <Frame Margin="2" Padding="-10" HorizontalOptions="Start" WidthRequest="45" HeightRequest="25" CornerRadius="10" BackgroundColor="Blue">
+                                    <Label Text="Event" FontSize="12" FontFamily="FontM" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                                </Frame>
+                                <Frame Margin="2" Padding="-10" HorizontalOptions="Start" WidthRequest="70" HeightRequest="25" CornerRadius="10" BackgroundColor="Blue">
+                                    <Label Text="Corporate" FontSize="12" FontFamily="FontM" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+                                </Frame>
+
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                </Frame>
+                <Frame Grid.Row="2" Padding="6" BackgroundColor="WhiteSmoke" CornerRadius="10">
+                    <Grid ColumnDefinitions="*,*">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Statistics" Margin="15" FontAttributes="Bold" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start"/>
+                            <Label Text="127" Margin="0" FontAttributes="None" FontFamily="FontM" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Total Bookings" Margin="10" FontAttributes="None" FontFamily="FontM" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="2 hours" Margin="0" FontAttributes="None" FontFamily="FontM" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Response Time" Margin="2" FontAttributes="None" FontFamily="FontM" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Statistics" Margin="15" FontAttributes="Bold" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start" TextColor="WhiteSmoke"/>
+                            <Label Text="98%" Margin="0" FontAttributes="None" FontFamily="FontM" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Completion Rate" Margin="10" FontAttributes="None" FontFamily="FontM" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="March 2020" Margin="0" FontAttributes="None" FontFamily="FontM" TextColor="Blue" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Member since" Margin="2" FontAttributes="None" FontFamily="FontM" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+                        </VerticalStackLayout>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="3" Padding="6" BackgroundColor="WhiteSmoke" CornerRadius="10">
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*" RowSpacing="20" ColumnSpacing="5">
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="0" >
+                            <Label Text="Achievements" FontAttributes="Bold"/>
+                            <HorizontalStackLayout Margin="5" >
+                                <Frame WidthRequest="50" Padding="12">
+                                    <Label Text="Trophy" TextColor="Gold" FontSize="25" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                </Frame>
+                                <Frame WidthRequest="130" >
+                                    <VerticalStackLayout>
+                                        <Label Text="Pro Photographer" FontAttributes="Bold" FontSize="10" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="50+ completed bookings" TextColor="Gray" FontSize="7" FontFamily="FontM" />
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout  Grid.Row="1" Grid.Column="0">
+
+                            <HorizontalStackLayout Margin="5">
+                                <Frame WidthRequest="50" Padding="12">
+                                    <Label Text="Bolt" TextColor="Gold" FontSize="25" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                                </Frame>
+                                <Frame WidthRequest="130">
+                                    <VerticalStackLayout>
+                                        <Label Text="Quick Responder" FontAttributes="Bold" FontSize="10" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="2 hour response time" TextColor="Gray" FontSize="7" FontFamily="FontM"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </HorizontalStackLayout>
+
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout  Grid.Row="0" Grid.Column="1">
+
+                            <HorizontalStackLayout Margin="5,25">
+                                <Frame WidthRequest="50" Padding="12">
+                                    <Label Text="star" TextColor="Gold" FontSize="25" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                                </Frame>
+                                <Frame  WidthRequest="130">
+                                    <VerticalStackLayout>
+                                        <Label Text="Top Rated" FontAttributes="Bold" FontSize="10" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="4.8+ averagevrating" TextColor="Gray" FontSize="7" FontFamily="FontM"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </HorizontalStackLayout>
+
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout  Grid.Row="1" Grid.Column="1">
+
+                            <HorizontalStackLayout Margin="5">
+                                <Frame WidthRequest="50" Padding="12">
+                                    <Label Text="heart" TextColor="Red" FontSize="25" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                                </Frame>
+                                <Frame WidthRequest="130">
+                                    <VerticalStackLayout>
+                                        <Label Text="Client Favorite" FontAttributes="Bold" FontSize="10" FontFamily="FontM" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="90% repear clients" TextColor="Gray" FontSize="7" FontFamily="FontM"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </HorizontalStackLayout>
+
+
+                        </VerticalStackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+
+
+        <Frame Grid.Row="2" Padding="6" >
+            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="4">
+                <Frame CornerRadius="5" BackgroundColor="AliceBlue" HasShadow="False" Grid.Column="0"  Padding="0">
+                    <VerticalStackLayout>
+                        <Label Text="Home" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
+                        <Label Text="Home" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame CornerRadius="5" Grid.Column="1" HasShadow="False"  Padding="0">
+                    <VerticalStackLayout>
+                        <Label Text="calendar" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
+                        <Label Text="Bookings" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="2" HasShadow="False" Padding="0">
+                    <VerticalStackLayout>
+                        <Label Text="bell" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
+                        <Label Text="Notifications" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="3" HasShadow="False" Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Frame.GestureRecognizers>
+                    <VerticalStackLayout>
+                        <Label Text="user" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
+                        <Label Text="Profile" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </Grid>
+        </Frame>
+    </Grid>
+
+
+</ContentPage>

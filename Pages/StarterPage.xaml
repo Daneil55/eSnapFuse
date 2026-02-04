@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eSnapFuse.StarterPage"
+              Shell.NavBarIsVisible="False"
+             Title="StarterPage">
+    <Grid RowDefinitions="85, *">
+        <Frame Grid.Row="0" Padding="10" HasShadow="True" BorderColor="Gray" BackgroundColor="Transparent">
+            <Grid RowDefinitions="50,5*">
+                <HorizontalStackLayout Grid.Row="0" BackgroundColor="Transparent">
+                    <Frame Margin="5" BackgroundColor="Blue" WidthRequest="50"
+                            HeightRequest="50" Padding="15" CornerRadius="50">
+                        <Label Text="DB" TextColor="White" FontAttributes="Bold"/>
+
+                    </Frame>
+
+                    <VerticalStackLayout Margin="5">
+                        <Label Text="Daniel Baraka" Margin="2" FontAttributes="Bold"/>
+
+                        <Label Text="Last seen 1h ago" Margin="5" TextColor="Gray" FontAttributes="Bold" FontSize="9"/>
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Grid.Row="0" HorizontalOptions="End" Margin="5,5" Padding="0">
+                    <HorizontalStackLayout Padding="0,-10,0,0">
+                        <Label Text="phone" Margin="5,6,0,0" TextColor="Gray" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                        <Label Text="video " Margin="15,6,0,0" TextColor="Gray" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                        <Label Text="ellipsis-vertical" FontSize="20" Margin="15,6,0,0" TextColor="Gray" FontFamily="IconSolid" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </HorizontalStackLayout>
+            </Grid>
+        </Frame>
+
+        <Frame Grid.Row="1"  Padding="0" Margin="8" HeightRequest="85" BackgroundColor="Transparent" VerticalOptions="End">
+            <Grid ColumnDefinitions="30,30, * , 30">
+                <Label Text="paperclip" Margin="5" HorizontalOptions="Start" Grid.Column="0" TextColor="Gray" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                <Label Text="camera" Margin="5" Grid.Column="1" TextColor="Gray" FontAttributes="Bold" FontFamily="IconSolid" VerticalOptions="Center"/>
+                <Frame Grid.Column="2" Padding="-4" HeightRequest="40" CornerRadius="50" Margin="5">
+                    <Entry Placeholder="Type a message" PlaceholderColor="Gray" VerticalOptions="Center"  Margin="15,0,0,0" BackgroundColor="Transparent"/>
+                </Frame>
+                <Label Text="paper-plane" FontSize="20" Grid.Column="3" Margin="0" TextColor="Gray" FontFamily="IconSolid" VerticalOptions="Center" HorizontalOptions="Start"/>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>
