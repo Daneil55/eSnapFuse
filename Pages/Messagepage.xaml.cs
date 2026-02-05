@@ -1,8 +1,8 @@
 namespace eSnapFuse.Pages;
 
-public partial class Profile : ContentPage
+public partial class Messagepage : ContentPage
 {
-    public Profile()
+    public Messagepage()
     {
         InitializeComponent();
     }

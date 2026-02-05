@@ -41,6 +41,9 @@
                 HasShadow="False"
                 BackgroundColor="Transparent"
                 Padding="1">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                </Frame.GestureRecognizers>
                 <Grid RowSpacing="10">
 
                     <Label Text="circle" 
@@ -51,7 +54,7 @@
                     VerticalOptions="Start"
                     FontAttributes="Bold"
                     FontFamily="IconSolid"/>
-                    <Label Text="comment"  
+                    <Label Text="message"  
                     FontSize="25" 
                     Margin="2,0,0,1"
                     VerticalOptions="Center"
@@ -69,7 +72,8 @@
                 HasShadow="False"
                 CornerRadius="50" 
                 Grid.Column="2">
-                <Image x:Name="ImageProfife" />
+                <Image x:Name="ImageProfife"
+                       Source="images.jpg"/>
 
 
             </Frame>
@@ -87,7 +91,7 @@
                                 <Label Text="+12" FontSize="15" HorizontalOptions="End" VerticalOptions="Center" FontFamily="FontM" TextColor="Green"/>
                             </Grid>
                             <Label Text="$2,450" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
-                            <Label Text="This Month" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
+                            <Label Text="Total spending" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
 
                         </VerticalStackLayout>
                     </Frame>
@@ -95,10 +99,10 @@
                         <VerticalStackLayout Spacing="10">
                             <Grid>
                                 <Label Text="user-group" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="IconSolid" TextColor="Blue"/>
-                                <Label Text="+82" FontSize="15" HorizontalOptions="End" VerticalOptions="Center" FontFamily="FontM" TextColor="Green"/>
+                                <Label Text="" FontSize="15" HorizontalOptions="End" VerticalOptions="Center" FontFamily="FontM" TextColor="Green"/>
                             </Grid>
-                            <Label Text="2,450" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
-                            <Label Text="Total clients" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
+                            <Label Text="5" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
+                            <Label Text="Family size" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
 
                         </VerticalStackLayout>
                     </Frame>
@@ -107,19 +111,19 @@
                             <Grid>
                                 <Label Text="calendar" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="IconRegular" TextColor="Purple"/>
                             </Grid>
-                            <Label Text="2,450" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
-                            <Label Text="Bookings" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
+                            <Label Text="20" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
+                            <Label Text="All Bookings" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
 
                         </VerticalStackLayout>
                     </Frame>
                     <Frame Grid.Column="1"  CornerRadius="10" Grid.Row="1">
                         <VerticalStackLayout Spacing="10">
                             <Grid>
-                                <Label Text="arrow-trend-up" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="IconSolid" TextColor="Green"/>
+                                <Label Text="arrow-trend-down" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="IconSolid" TextColor="Red"/>
                                 <Label Text="star" FontSize="15" HorizontalOptions="End" VerticalOptions="Center" FontFamily="IconSolid" TextColor="Gold"/>
                             </Grid>
-                            <Label Text="2,450" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
-                            <Label Text="Total clients" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
+                            <Label Text="2" FontAttributes="Bold" FontSize="20" HorizontalOptions="Start" FontFamily="FontM"/>
+                            <Label Text="Remaining Days" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" FontFamily="FontM" TextColor="Grey"/>
 
                         </VerticalStackLayout>
                     </Frame>
@@ -135,25 +139,25 @@
                             <Frame Grid.Column="0" Padding="10" BorderColor="Gray" CornerRadius="10" Grid.Row="0">
                                 <VerticalStackLayout Spacing="5">
                                     <Label Text="Add" HorizontalOptions="Center" FontFamily="IconSolid"/>
-                                    <Label Text="Add portofolio" HorizontalOptions="Center" FontFamily="FontM"/>
+                                    <Label Text="Add Family size" HorizontalOptions="Center" FontFamily="FontM"/>
                                 </VerticalStackLayout>
                             </Frame>
                             <Frame Grid.Column="1" Padding="10" BorderColor="Gray" CornerRadius="10" Grid.Row="0">
                                 <VerticalStackLayout Spacing="5">
                                     <Label Text="arrow-up-from-bracket" HorizontalOptions="Center" FontFamily="IconSolid"/>
-                                    <Label Text="Update Photo" HorizontalOptions="Center" FontFamily="FontM"/>
+                                    <Label Text="Submit a request" HorizontalOptions="Center" FontFamily="FontM"/>
                                 </VerticalStackLayout>
                             </Frame>
                             <Frame Grid.Column="0" Padding="10" BorderColor="Gray" CornerRadius="10" Grid.Row="1">
                                 <VerticalStackLayout Spacing="5">
                                     <Label Text="Calendar" HorizontalOptions="Center" FontFamily="IconRegular"/>
-                                    <Label Text="Set Availability" HorizontalOptions="Center" FontFamily="FontM"/>
+                                    <Label Text="Book new room" HorizontalOptions="Center" FontFamily="FontM"/>
                                 </VerticalStackLayout>
                             </Frame>
                             <Frame Grid.Column="1" Padding="10" BorderColor="Gray" CornerRadius="10" Grid.Row="1">
                                 <VerticalStackLayout Spacing="5">
-                                    <Label Text="Camera" HorizontalOptions="Center" FontFamily="IconRegular"/>
-                                    <Label Text="Update Packages" HorizontalOptions="Center" FontFamily="FontM"/>
+                                    <Label Text="check" HorizontalOptions="Center" FontFamily="IconSolid"/>
+                                    <Label Text="Give a report" HorizontalOptions="Center" FontFamily="FontM"/>
                                 </VerticalStackLayout>
                             </Frame>
                         </Grid>
@@ -161,7 +165,7 @@
                 </Frame>
                 <Frame  CornerRadius="10" Grid.Row="2">
                     <Grid RowDefinitions="2*, *">
-                        <Label Text="Booking Request"
+                        <Label Text="Current rooms"
                             FontSize="14" 
                             Margin="2"
                             FontAttributes="Bold" FontFamily="FontM" />
@@ -253,22 +257,22 @@
                             </Frame>
                             <Frame  BorderColor="Gray" Padding="10" HeightRequest="80" CornerRadius="10" Grid.Row="2">
                                 <Grid ColumnDefinitions="60,*, 70">
-                                    <Frame CornerRadius="50" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
-                                        <Image Source="coloredwm.jpg" />
+                                    <Frame CornerRadius="10" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
+                                        <Image Source="hotel.jpg" />
 
                                     </Frame>
                                     <VerticalStackLayout Grid.Column="1">
-                                        <Label Text="Indiana Johns"
+                                        <Label Text="Super Room"
                                             FontSize="14" 
                                             Margin="0"
                                             FontAttributes="Bold" FontFamily="FontM" />
 
-                                        <Label Text="Wedding Photography"
+                                        <Label Text="From: Dec,34,2024.2:00pm"
                                             FontSize="12" 
                                             Margin="0"
                                             FontFamily="FontM" />
 
-                                        <Label Text="Dec,34,2024.2:00pm"
+                                        <Label Text="To: Dec,34,2024.2:00pm"
                                             FontSize="12" 
                                             Margin="0"
                                             FontFamily="FontM" />
@@ -296,22 +300,23 @@
                             </Frame>
                             <Frame  Padding="10" BorderColor="Gray" HeightRequest="80" CornerRadius="10" Grid.Row="0">
                                 <Grid ColumnDefinitions="60,*, 70">
-                                    <Frame CornerRadius="50" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
-                                        <Image Source="blackwm.jpg" />
+                                    <Frame CornerRadius="10" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
+                                        <Image Source="hotel.jpg" />
 
                                     </Frame>
                                     <VerticalStackLayout Grid.Column="1">
-                                        <Label Text="Indiana Johns"
+                                        <Label Text="Luxury Room"
                                             FontSize="14" 
                                             Margin="0"
                                             FontAttributes="Bold" FontFamily="FontM" />
 
-                                        <Label Text="Wedding Photography"
+
+                                        <Label Text="From Dec,34,2024.2:00pm"
                                             FontSize="12" 
                                             Margin="0"
                                             FontFamily="FontM" />
-
-                                        <Label Text="Dec,34,2024.2:00pm"
+                                        
+                                        <Label Text="To Dec,34,2024.2:00pm"
                                             FontSize="12" 
                                             Margin="0"
                                             FontFamily="FontM" />
@@ -345,24 +350,24 @@
 
                 <Frame Grid.Row="3" CornerRadius="10" HasShadow="True" >
                     <Grid RowDefinitions="2*, *">
-                        <Label Text="Upcoming Shoots"
+                        <Label Text="Expired Booking"
                      FontSize="14" 
                      Margin="2"
                      FontAttributes="Bold" FontFamily="FontM" />
                         <Grid RowDefinitions="*,*" Margin="2" HeightRequest="180" VerticalOptions="End" RowSpacing="0" Grid.Row="1">
                             <Frame BorderColor="Gray" Padding="10" HeightRequest="80" CornerRadius="10" Grid.Row="0">
                                 <Grid ColumnDefinitions="60,*, 80">
-                                    <Frame CornerRadius="50" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
-                                        <Image Source="asianwm.jpg" />
+                                    <Frame CornerRadius="10" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
+                                        <Image Source="hotel.jpg" />
 
                                     </Frame>
                                     <VerticalStackLayout Grid.Column="1">
-                                        <Label Text="Indiana Johns"
+                                        <Label Text="Super Room"
                                      FontSize="14" 
                                      Margin="0"
                                      FontAttributes="Bold" FontFamily="FontM" />
 
-                                        <Label Text="Wedding Photography"
+                                        <Label Text="Dec,34,2024.2:00pm"
                                      FontSize="12" 
                                      Margin="0"
                                      FontFamily="FontM" />
@@ -401,22 +406,22 @@
                             </Frame>
                             <Frame BorderColor="Gray" Padding="10" HeightRequest="80" CornerRadius="10" Grid.Row="1">
                                 <Grid ColumnDefinitions="60,*, 80">
-                                    <Frame CornerRadius="50" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
-                                        <Image Source="africanwm.jpg" />
+                                    <Frame CornerRadius="10" WidthRequest="50" Padding="-20" HeightRequest="50" BackgroundColor="Gray">
+                                        <Image Source="hotel.jpg" />
 
                                     </Frame>
                                     <VerticalStackLayout Grid.Column="1">
-                                        <Label Text="Marque Luis"
+                                        <Label Text="Luxury"
                                      FontSize="14" 
                                      Margin="0"
                                      FontAttributes="Bold" FontFamily="FontM" />
 
-                                        <Label Text="Wedding Photography"
+                                        <Label Text="Not started"
                                      FontSize="12" 
                                      Margin="0"
                                      FontFamily="FontM" />
 
-                                        <Label Text="ongoing event"
+                                        <Label Text="A waiting.."
                                      FontSize="12" 
                                      Margin="0"
                                      FontFamily="FontM" />
@@ -441,7 +446,7 @@
                                             <HorizontalStackLayout Spacing="3">
                                                 <Label Text="clock" FontSize="12" VerticalOptions="Center" TextColor="Green" FontFamily="IconRegular"/>
 
-                                                <Label VerticalOptions="Center" Text="Confirmed" TextColor="Green" FontSize="12" FontAttributes="Bold"/>
+                                                <Label VerticalOptions="Center" Text="Canceled" TextColor="Orange" FontSize="12" FontAttributes="Bold"/>
                                             </HorizontalStackLayout>
                                         </Frame>
 
@@ -463,28 +468,42 @@
 
         <Grid Grid.Row="3" Padding="0" BackgroundColor="Transparent">
             <Grid ColumnDefinitions="*, *, *, *" BackgroundColor="Transparent" ColumnSpacing="4">
-                <Frame CornerRadius="5" BackgroundColor="Transparent" HasShadow="False" Grid.Column="0"  Padding="0">
+                <Frame x:Name="Home" CornerRadius="5" BackgroundColor="Transparent" HasShadow="False" Grid.Column="0"  Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
+
                         <Label Text="Home" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
                         <Label Text="Home" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame CornerRadius="5" Grid.Column="1" BackgroundColor="Transparent" HasShadow="False"  Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
+
                         <Label Text="calendar" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
                         <Label Text="Bookings" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+
                     </VerticalStackLayout>
                 </Frame>
                 <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="2" HasShadow="False" Padding="0">
-
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
                         <Label Text="bell" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
                         <Label Text="Notifications" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="3" HasShadow="False" Padding="0">
-
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
+
                         <Label Text="gear" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
                         <Label Text="Profile" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>

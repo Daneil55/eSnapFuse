@@ -1,13 +1,10 @@
-﻿
-using eSnapFuse.Models;
-using eSnapFuse.Pages;
-using System.Threading.Tasks;
+﻿using eSnapFuse.Pages;
 
 namespace eSnapFuse
 {
     public partial class MainPage : ContentPage
     {
-       
+
 
         public MainPage()
         {
@@ -24,19 +21,30 @@ namespace eSnapFuse
 
         }
 
-       
+
         private async void Profile_Clicked(object sender, EventArgs e)
         {
-            //await DisplayAlert("Found", "Not Found", "Ok");
-            await Navigation.PushAsync(new Rooms());
+            await DisplayAlert("Found", "Booking found", "Ok");
+
         }
 
         private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
         {
-            
+            //Navigate to the MainPage
+            Navigation.PushAsync(new MainPage());
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, TappedEventArgs e)
+        {
+            Navigation.PushAsync(new Rooms());
+        }
+
+        private void TapGestureRecognizer_Tapped_2(object sender, TappedEventArgs e)
+        {
+
+        }
+
+        private void TapGestureRecognizer_Tapped_3(object sender, TappedEventArgs e)
         {
 
         }

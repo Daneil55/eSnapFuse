@@ -21,11 +21,11 @@
             <VerticalStackLayout 
                 Grid.Column="0"
                 VerticalOptions="Center">
-            <Label Text="Find Your Perfect Photographer"
+            <Label Text="Find Your Perfect Rooms"
                    FontSize="14" 
                    Margin="0,0,0,0"
                    FontAttributes="Bold" FontFamily="FontM" />
-            <Label Text="Captcher your spacial moments"
+            <Label Text="Captcher your spacial hollydays with us"
                    FontSize="10"
                    FontAttributes="None"
                    TextColor="#808080"
@@ -42,20 +42,7 @@
                    Padding="1">
                 <Grid RowSpacing="10">
                     
-                    <Label Text="circle" 
-                       TextColor="Red" 
-                       HorizontalOptions="End"
-                       Margin="0,0,5,0" 
-                       FontSize="10"
-                       VerticalOptions="Start"
-                       FontAttributes="Bold"
-                       FontFamily="IconSolid"/>
-                <Label Text="comment"  
-                       FontSize="25" 
-                       Margin="2,0,0,1"
-                       VerticalOptions="Center"
-                       FontAttributes="Bold"
-                       FontFamily="IconRegular"/>
+                   
             </Grid>
             </Frame>
             <Frame BackgroundColor="AliceBlue" 
@@ -68,7 +55,7 @@
                    HasShadow="False"
                    CornerRadius="50" 
                    Grid.Column="2">
-                    <Image Source="image.jpg" />
+                    <Image Source="images.jpg" />
 
                 </Frame>        
             
@@ -84,7 +71,7 @@
                 <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
             <Frame Grid.Column="0" CornerRadius="10" HasShadow="False" BackgroundColor="AliceBlue" HeightRequest="30" Padding="0">
-            <SearchBar SearchIconColor="Black" Placeholder="Search photographer, studios" HorizontalOptions="Start"  Margin="-10,0,0,0"/>
+            <SearchBar SearchIconColor="Black" Placeholder="Search rooms " HorizontalOptions="Start"  Margin="-10,0,0,0"/>
             </Frame>
             
             <Label Text="filter" Grid.Column="1" FontSize="25" TextColor="Gray" Margin="0,-8,0,0" FontFamily="IconSolid" HorizontalOptions="Center" VerticalOptions="Start"/>
@@ -94,17 +81,15 @@
                 <Label Text="All" HorizontalOptions="Center" VerticalOptions="Center"/>               
             </Frame>
             <Frame  Grid.Row="1" Padding="0" HorizontalOptions="Start" WidthRequest="75" CornerRadius="40">               
-                <Label Text="Wedding" HorizontalOptions="Center" VerticalOptions="Center"/>               
+                <Label Text="Luxury" HorizontalOptions="Center" VerticalOptions="Center"/>               
             </Frame>
             <Frame Grid.Row="1" Padding="0" HorizontalOptions="Start" WidthRequest="65" CornerRadius="40">               
-                <Label Text="Portrait" HorizontalOptions="Center" VerticalOptions="Center"/>               
+                <Label Text="Standard" HorizontalOptions="Center" VerticalOptions="Center"/>               
             </Frame>
             <Frame  Grid.Row="1" Padding="0" HorizontalOptions="Start" WidthRequest="60" CornerRadius="40">               
-                <Label Text="Event" HorizontalOptions="Center" VerticalOptions="Center"/>               
+                <Label Text="Super" HorizontalOptions="Center" VerticalOptions="Center"/>               
             </Frame>
-            <Frame Grid.Row="1" Padding="0" HorizontalOptions="Start" WidthRequest="60" CornerRadius="40">               
-                <Label Text="Outdoor" HorizontalOptions="Center" VerticalOptions="Center"/>               
-            </Frame>
+
             </HorizontalStackLayout>
         </Grid>
         <Grid Grid.Row="2" BackgroundColor="Transparent">
@@ -117,7 +102,7 @@
                     </Frame>
                     <VerticalStackLayout Margin="5">
                     <Label Text="Daniel Baraka" Margin="2" FontAttributes="Bold"/>
-                    <Label Text="@DanielBaraka" Margin="0" TextColor="Gray" FontAttributes="Bold"/>
+                    <Label Text="@manager" Margin="0" TextColor="Gray" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
                 </HorizontalStackLayout>
@@ -140,19 +125,19 @@
                        
                     </Grid.RowDefinitions>
                         <Frame Grid.Row="0" Padding="-15">
-                            <Image Source="image.jpg" />
+                            <Image Source="hotel.jpg" />
                         </Frame>
                         <Grid RowDefinitions="*,*,*" Grid.Row="1">
                             
                         <Grid Grid.Row="0" HeightRequest="50" VerticalOptions="Start"
                               Margin="10" ColumnDefinitions="*,*" RowDefinitions="*,*">
-                            <Label FontAttributes="Bold" FontSize="19" FontFamily="FontM" Text="Echo Pictures TV" Grid.Column="0"/>
+                            <Label FontAttributes="Bold" FontSize="19" FontFamily="FontM" Text="Luzury hotel" Grid.Column="0"/>
                             <HorizontalStackLayout Grid.Column="1" Grid.Row="0" Spacing="9" HorizontalOptions="End">
                             <Label FontAttributes="Bold" FontSize="19" FontFamily="IconSolid" Text="star" TextColor="Gold" />
                             <Label FontAttributes="Bold" FontSize="19" FontFamily="FontM" Text="1.4" Grid.Column="1" Grid.Row="0"/>
                             </HorizontalStackLayout>
                             <VerticalStackLayout Grid.Column="0" Grid.Row="1" Spacing="9" HorizontalOptions="Start">
-                                <Label FontAttributes="Bold" FontSize="12" FontFamily="FontM" Text="I'm a professional photographer with more that five star rate." TextColor="Gray" />
+                                <Label FontAttributes="Bold" FontSize="12" FontFamily="FontM" Text="A perfect luxury room for a family with more that five star rate." TextColor="Gray" />
                             </VerticalStackLayout>
                             <VerticalStackLayout Grid.Column="1" Grid.Row="1" Spacing="9" HorizontalOptions="End">
                                 <Label FontAttributes="Bold" FontSize="12" FontFamily="FontM" Text="(127 viewer)" TextColor="Gray" />
@@ -163,26 +148,26 @@
                             <HorizontalStackLayout  Margin="10" Grid.Row="1" Spacing="55" HorizontalOptions="Start">
                                 <VerticalStackLayout>
                                     <HorizontalStackLayout Spacing="10">
-                                <Label FontAttributes="Bold" FontSize="19" FontFamily="IconSolid" Text="location-dot" TextColor="Green" />
-                                <Label FontAttributes="Bold" FontSize="15" TextColor="Gray" FontFamily="FontM" Text="DownTown, Lilongwe"/>
+                                <Label FontAttributes="Bold" FontSize="19" FontFamily="IconSolid" Text="wifi" TextColor="Green" />
+                                <Label FontAttributes="Bold" FontSize="15" TextColor="Gray" FontFamily="FontM" Text="free wifi"/>
                                     </HorizontalStackLayout>
                                     <HorizontalStackLayout Spacing="2" Margin="8">
-                                        <Frame  Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="70" HeightRequest="20">
-                                        <Label Text="Wedding"  HorizontalOptions="Center"  FontFamily="FontM" />
+                                        <Frame  Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="120" HeightRequest="20">
+                                        <Label Text="Five chambers"  HorizontalOptions="Center"  FontFamily="FontM" />
                                         </Frame>
-                                        <Frame  Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="70" HeightRequest="20">
-                                        <Label Text="Portrait"  HorizontalOptions="Center"  FontFamily="FontM" />
+                                        <Frame  Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="85" HeightRequest="20">
+                                        <Label Text="Two Living room"  HorizontalOptions="Center"  FontFamily="FontM" />
                                         </Frame>
-                                        <Frame Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="70" HeightRequest="20">
-                                        <Label Text="Outdoor" HorizontalOptions="Center"  FontFamily="FontM" />
+                                        <Frame Padding="0" HasShadow="True" CornerRadius="10" WidthRequest="150" HeightRequest="20">
+                                        <Label Text="Swimming pool" HorizontalOptions="Center"  FontFamily="FontM" />
                                         </Frame>
                                    
                                 </HorizontalStackLayout>
                                 </VerticalStackLayout>
                             </HorizontalStackLayout>
                            
-                             <Label FontAttributes="Bold" FontSize="19" FontFamily="IconSolid" Text="From $150" Grid.Row="3" HorizontalOptions="Start" Margin="10" VerticalOptions="Center" TextColor="Green" />
-                            <Button x:Name="Profile" Clicked="Profile_Clicked" VerticalOptions="End" Grid.Row="3" HorizontalOptions="End" FontAttributes="Bold" Text="View Profile" HeightRequest="50" Margin="10" WidthRequest="100" />
+                             <Label FontAttributes="Bold" FontSize="19" Text="From $150" Grid.Row="3" HorizontalOptions="Start" Margin="10" VerticalOptions="Center" TextColor="Green" />
+                            <Button x:Name="Profile" Clicked="Profile_Clicked" VerticalOptions="End" Grid.Row="3" HorizontalOptions="End" FontAttributes="Bold" Text="Book" HeightRequest="50" Margin="10" WidthRequest="100" />
                         </Grid>
                     </Grid>
                 
@@ -192,20 +177,29 @@
         <Grid Grid.Row="3" Padding="0" BackgroundColor="Transparent">
             <Grid ColumnDefinitions="*, *, *, *" BackgroundColor="Transparent" ColumnSpacing="4">
                 <Frame CornerRadius="5" BackgroundColor="Transparent" HasShadow="False" Grid.Column="0"  Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
+                       
                     <Label Text="Home" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconRegular"/>
                     <Label Text="Home" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame CornerRadius="5" Grid.Column="1" BackgroundColor="Transparent" HasShadow="False"  Padding="0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Frame.GestureRecognizers>
                     <VerticalStackLayout>
-                    <Label Text="calendar" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
+                        
+                        <Label Text="calendar" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
                     <Label Text="Bookings" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
+                       
                     </VerticalStackLayout>
                 </Frame>
                 <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="2" HasShadow="False" Padding="0">
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                     </Frame.GestureRecognizers>
                     <VerticalStackLayout>
                     <Label Text="bell" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
@@ -214,10 +208,11 @@
                 </Frame>
                 <Frame CornerRadius="5" BackgroundColor="Transparent"  Grid.Column="3" HasShadow="False" Padding="0">
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
                     </Frame.GestureRecognizers>
                     <VerticalStackLayout>
-                    <Label Text="gear" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
+                        
+                        <Label Text="gear" FontSize="26" VerticalOptions="Start" HorizontalOptions="Center"  FontFamily="IconSolid"/>
                     <Label Text="Profile" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="FontM"/>
                     </VerticalStackLayout>
                 </Frame>
